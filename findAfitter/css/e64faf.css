@@ -1,0 +1,398 @@
+/* CSS Document */
+
+#e64-fitterMap {
+    width: 100%;
+    height: 500px;
+	max-width:1024px;
+    border:1px solid #6f7882;
+	float:left;
+}
+
+.e64-faf-row {
+	width:100%;
+	float: left;
+}
+
+.e64-container {
+	float:left;
+	width:100%;
+}
+
+e64-col {
+	float:left;
+	margin: 5px;
+}
+
+.e64-text-right {
+	float:right !important;
+}
+
+.fitterSearchForm p {
+    display: inline-block;
+}
+
+.e64-col-1 {width: 8%;}
+.e64-col-2 {width: 16%;}
+.e64-col-3 {width: 24%;}
+.e64-col-4 {width: 32%;}
+.e64-col-5 {width: 40%;}
+.e64-col-6 {width: 48%;}
+.e64-col-7 {width: 56%;}
+.e64-col-8 {width: 64%;}
+.e64-col-9 {width: 72%;}
+.e64-col-10 {width: 80%;}
+.e64-col-11 {width: 88%;}
+.e64-col-12 {width: 96%;}
+.e64-col {float:left;}
+
+
+.e64-ftr-panel {
+	overflow: hidden;
+    -moz-transition: max-height 0.4s ease-in-out;
+    -o-transition: max-height 0.4s ease-in-out;
+    -webkit-transition: max-height 0.4s ease-in-out;
+	transition: max-height .4s ease-in-out;
+
+	max-height: 0px;
+    background-color: rgba(255,255,255,0.65);
+	padding: 0px 5px;
+}
+
+.e64-ftr-accordion {
+	border: 1px solid #eee;
+	background-color: rgba(255,255,255,0);
+	color: #444;
+	cursor: pointer;
+	padding: 10px;
+	text-align: left;
+	outline: none;
+	margin-bottom:5px;
+	position: relative;
+	width:150px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.e64-ftr-accordion:hover {
+	background-color: #ccc;
+	color: #777777;
+}
+
+.e64-ftr-accordion::after {
+	content: '';
+	position: absolute;
+	right: 8px;
+	bottom: 13px;
+	width: 0;
+	height: 0;
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+	border-top: 6px solid #636363;
+	clear: both;
+}
+
+.e64-ftr-active::after {
+    border-bottom: 10px solid #e8e8e8;
+    border-top: 0px;
+}
+
+.e64_radius_opt {
+	display:block;
+}
+
+.e64_infowin h3 {
+    margin: 0px;
+}
+
+.e64_infowin .e64-faf-button {
+    margin-top: 10px;
+	float: left;
+}
+
+.e64_infowin .e64-eye {
+	display: none;
+}
+
+.e64-fitterPanel .e64-opt-hidden {
+	display: none !important;
+}
+
+.e64-display-none {
+	display: none !important;
+}
+
+.e64_infowin a {
+	color: #99cb3f;
+}
+
+.e64_infowin i, .e64-fitterPanel i {
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.e64-fitterPanel h3 i {
+	margin-left: 10px;
+}
+
+.e64_infowin p, .e64-fitterPanel p {
+    display: block;
+    margin: 5px;
+}
+
+.e64-faf-fivestar {
+    float: right;
+	width: 80px;
+	margin-left: 10px;
+	margin-bottom:10px;
+}
+
+.e64-faf-title .showFitterOnMap {
+    font-family: "bebas-neue-v14-deprecated", sans-serif;
+    font-size: 22px;
+}
+
+.fitterSearchForm select, .fitterSearchForm input[type=text] {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    margin:0px 20px 0px 10px;
+}
+
+.e64-postcode {
+	text-transform: uppercase;
+}
+
+
+.fitterSearchForm label {
+    float:left;
+}
+
+.fitterSearchForm select, .fitterSearchForm input[type=text] {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    margin:0px 20px 0px 10px;
+}
+
+.fitterSearchForm select {
+	display: inline-block;
+	-moz-appearance: menulist-button;
+    -webkit-appearance: menulist-button;
+    appearance: menulist-button;
+	padding: 1px 5px;
+}
+
+
+.e64_findFitters {
+    margin: 10px 10px 0 0;
+    padding: 8px 20px!important;
+    float: left;
+}
+
+
+.e64-mapList {
+    height:500px;
+	overflow-y: auto;
+	display:none;
+	margin-right: 5px;
+}
+
+
+
+/* width */
+.e64-mapList::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+.e64-mapList::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.e64-mapList::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius:5px;
+}
+
+/* Handle on hover */
+.e64-mapList::-webkit-scrollbar-thumb:hover {
+  background: #99CB3F;
+}
+
+.e64-faf-button {
+    color: #fff!important;
+    background: #99cb3f!important;
+    padding: 10px 6%!important;
+    width: auto;
+    text-align: center!important;
+    border: 0!important;
+    float: right;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 3px!important;
+    font-family: "bebas-neue-v14-deprecated", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 1px;
+    -webkit-transition: width 0.5s, height 0.5s;
+    -o-transition: width 0.5s, height 0.5s;
+    transition: width 0.5s, height 0.5s;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    font-size: 20px;
+}
+
+.e64-fitterPanel {
+    margin: 0px 5px 0px 0px;
+    padding: 5px 0px 15px;
+    border-bottom: 1px solid #99CB3F;
+}
+
+.e64-fitterPanel sup {
+	margin-left:5px;
+}
+
+.e64-fitterPanel a:not(.e64_bookFitter) {
+	color: #99cb3f !important;
+}
+
+.e64_infowin h3 i {
+	display: none;
+}
+
+.e64-fitterPanel .e64_bookFitter {
+    float: none;
+    display: inline-block;
+}
+
+.e64-fitterPanel h3, .e64-fitterPanel p {
+    margin:5px;
+}
+
+.e64-extra-query {
+	display:none;
+	margin-bottom:10px;
+}
+
+.e64-firstQuery {
+	margin-top:10px;
+	padding-right: 30px;
+}
+
+
+.fitterSearchForm input[type="text"], .fitterSearchForm select {
+    background: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    padding: 10px;
+    box-sizing: border-box;
+	float: left;
+	margin: 10px 15px 10px 0px;	
+}
+
+.fitterSearchForm select {
+    padding:12px 10px;
+    margin: 10px 20px 10px 0px;
+}
+
+.fitterSearchForm .e64-firstQuery select {
+	width: 30%;
+	margin-left: 0px;
+}
+
+.e64-extra-query .e64-faf-button {
+    float: left;
+    padding: 12px 20px!important;
+    margin: 10px 10px 10px 10px;
+}
+
+.e64-firstQuery .e64_findFitters {
+    width: calc( 100% - 45px );
+    float: right;
+    margin: 10px 0 0;
+}
+
+#e64-postcode-1 {
+	width: 100%;
+	margin: 0px;
+}
+
+#e64-postcode-2 {
+    width: 100%;
+    max-width:360px;
+	margin-right: 15px;
+}
+
+.e64_useCurrentLocation {
+	margin: 10px 0 0;
+	color: #777777!important;
+	background-color: #eeeef0!important;
+}
+
+.e64_useCurrentLocation:hover {
+    color: #fff!important;
+    background: #99cb3f!important;
+}
+
+.e64_useCurrentLocation i {
+	margin-right:10px;
+}
+
+.e64-firstQuery .e64_useCurrentLocation {
+	width: calc( 100% - 45px );
+}
+
+.e64-choose-a-fitter {
+    margin-top: 10px;
+}
+
+.e64-faf-grey-overlay {
+    height: 100%;
+    width: 100vw;
+    z-index: 1000;
+    background-color: rgb( 119, 119, 119, 0.8);
+    opacity: 1;
+    top: 0px;
+    position: fixed;
+	overflow: auto;
+	display:none;
+}
+
+.e64-faf-grey-overlay .e64-close-button {
+	position: absolute;
+	top: 20px;
+	right:50px;
+    width: 65px;
+    text-align: right;
+	display: none;
+}
+
+.e64-faf-grey-overlay .e64-container {
+    background-color: white;
+    margin: 30px;
+    padding: 20px;
+    width: calc( 100% - 115px );
+	position: absolute;
+	max-width: 1150px;
+	display:none;
+}
+
+.e64-close-button .e64-closeOverlay {
+    font-size: 12px;
+    color: white;
+    font-style: normal;
+    font-weight: 300;
+	font-weight: bold;
+    letter-spacing: 1px;
+    display: block;
+}
+

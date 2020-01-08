@@ -1,0 +1,33 @@
+/* CSS Document */
+.e64-col {
+	width:100%;
+}
+
+#e64-fitterMap {
+	margin-left: 0px;
+}
+
+.e64-mapList {
+	margin-bottom:20px;
+	max-height: 350px;
+}
+
+.e64-firstQuery .e64_findFitters, .e64-firstQuery .e64_useCurrentLocation {
+    width: 88%;
+}
+
+.e64-firstQuery {
+	margin-bottom: 10px;
+}
+
+.e64-faf-grey-overlay .e64-container {
+    margin: 30px 10px;
+    padding: 10px;
+    width: calc( 100% - 40px);
+}
+
+.e64-close-button {
+    width: 30px !important;
+    height: 15px !important;
+    overflow: hidden;
+}

@@ -1,6 +1,6 @@
 # Alloygator WordPress Plugins
  
-This repo contains 4 separate WordPress plug-ins developed for a client and is not available for public use. Is has been published as an example of some of my code.
+This repo contains 4 separate WordPress plug-ins developed for a client and is not available for public use. It has been published as an example of some of my code.
 
 The 4 plug-ins are;
 

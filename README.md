@@ -38,7 +38,7 @@ URL to live version: https://alloygator.com/uk/gallery/
 
 This plug-in modifies an existing plug-in to display car log graphics on the buttons to filter the images inthe gallery
 
-##csvExportModifier
+## csvExportModifier
 
 Uses PHP
 
